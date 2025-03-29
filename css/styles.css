@@ -89,11 +89,33 @@ img {
   padding: 32px 0;
 }
 
+.icon {
+  fill: #f4f4fd;
+}
+
 .social-links-icons {
   display: flex;
 }
 
-.icon:hover {
+.social-links-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover,
+.social-links:focus {
+  background-color: #4d5ae5;
   cursor: pointer;
 }
 
@@ -101,6 +123,8 @@ img {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -136,17 +160,15 @@ img {
   text-decoration: none;
   font-style: inherit;
   letter-spacing: 0.02em;
+}
+
+.nav-item .active {
+  color: #404bbf;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #404bbf;
-}
-
-.nav-link:hover::after,
-.nav-link:focus::after {
+.nav-item .active::after {
   content: "";
   display: block;
   border-radius: 2px;
@@ -154,7 +176,13 @@ img {
   height: 4px;
   background-color: #404bbf;
   position: absolute;
-  top: 68px;
+  bottom: -1px;
+  left: 0;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
 }
 
 .contacts {
@@ -186,6 +214,7 @@ img {
 
 .hero-section {
   background-color: #2e2f42;
+  max-width: 1440рх;
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
@@ -195,7 +224,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440рх;
   padding: 188px 0;
   text-align: center;
 }
@@ -254,11 +282,13 @@ img {
 }
 
 .features-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
   background: #f4f4fd;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  width: 100%;
-  padding: 24px 100px;
   margin-bottom: 8px;
 }
 
@@ -299,6 +329,7 @@ img {
 .team-cards .social-links-icons {
   gap: 24px;
   padding: 0 16px;
+  justify-content: center;
 }
 
 .team-cards .sub-title {
@@ -341,6 +372,9 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   width: 100%;
   height: 100%;
   background-color: #4d5ae5;
@@ -380,8 +414,11 @@ img {
 
 .footer-container {
   display: flex;
-  direction: row;
-  gap: 120px;
+  align-items: baseline;
+}
+
+.footer-item:first-child {
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -400,6 +437,7 @@ img {
 .medium {
   font-weight: 500;
   margin-bottom: 16px;
+  color: #ffffff;
 }
 
 .footer-section .social-links-icons {
