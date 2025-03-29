@@ -115,7 +115,7 @@ img {
 
 .social-link:hover,
 .social-links:focus {
-  background-color: #4d5ae5;
+  background-color: #404bbf;
   cursor: pointer;
 }
 
@@ -123,7 +123,7 @@ img {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -214,7 +214,7 @@ img {
 
 .hero-section {
   background-color: #2e2f42;
-  max-width: 1440рх;
+  max-width: 1440px;
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
@@ -434,7 +434,7 @@ img {
   color: #f4f4fd;
 }
 
-.medium {
+.footer-section .medium {
   font-weight: 500;
   margin-bottom: 16px;
   color: #ffffff;
@@ -442,4 +442,10 @@ img {
 
 .footer-section .social-links-icons {
   gap: 16px;
+}
+
+.footer-section .social-link:hover,
+.footer-section .social-links:focus {
+  background-color: #31d0aa;
+  cursor: pointer;
 }
