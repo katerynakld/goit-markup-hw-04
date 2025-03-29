@@ -114,7 +114,7 @@ img {
 }
 
 .social-link:hover,
-.social-links:focus {
+.social-link:focus {
   background-color: #404bbf;
   cursor: pointer;
 }
@@ -445,7 +445,7 @@ img {
 }
 
 .footer-section .social-link:hover,
-.footer-section .social-links:focus {
+.footer-section .social-link:focus {
   background-color: #31d0aa;
   cursor: pointer;
 }
